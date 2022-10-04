@@ -1,0 +1,42 @@
+package nopwebsitetesting;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class readxpathfile {
+	
+	private Properties xpathprop;
+	public readxpathfile() {
+
+		FileInputStream fiss;
+		try {
+			fiss = new FileInputStream(
+					"C:\\SURAJ\\Backup_29122021\\Work\\Traning\\seleniumsep\\workspace\\com.sopramaven\\src\\main\\resources\\xpath.properties");
+
+			this.xpathprop = new Properties();
+
+			xpathprop.load(fiss);
+		} catch (FileNotFoundException e) {			
+			e.printStackTrace();
+		} catch (IOException e) {			
+			e.printStackTrace();
+		}
+
+	}
+
+
+	public String usernamexpath( ) {		
+		return xpathprop.getProperty("username");
+	}
+	
+	public String passwordxpath( ) {		
+		return xpathprop.getProperty("password");
+	}
+	
+	public String loginbuttonxpath( ) {		
+		return xpathprop.getProperty("loginbutton");
+	}
+
+}

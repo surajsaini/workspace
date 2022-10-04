@@ -1,0 +1,36 @@
+package nopwebsitetesting;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class noploginpagetest extends baseclass {
+
+	baseclass obj = new baseclass();
+
+	@Test
+	public void logintest() throws InterruptedException, IOException {
+
+		noplogin.adminfield(conf.getUserName());
+		log.info("email enter succesfully");
+		noplogin.passwordfield(conf.getPass());
+		log.info("password enter sucessfully");
+		obj.takescreenshot(driver, "loginpage");
+		log.info("screenshot taken");
+		Thread.sleep(1500);
+		obj.noplogin.clickonlogin();
+		noplogin.clickonlogin();
+		log.info("login sucessfully");
+		Thread.sleep(2500);
+		Assert.assertEquals("Dashboard / nopCommerce administration", driver.getTitle());
+
+	}
+
+	@Test
+	public void logouttest() {
+		
+		
+	}
+
+}

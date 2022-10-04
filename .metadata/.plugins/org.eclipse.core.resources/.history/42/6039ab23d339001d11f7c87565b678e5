@@ -1,0 +1,3 @@
+username=//input[contains(@class,'email')]
+password=//input[contains(@class,'password')]
+loginbutton="//button[contains(@type,'submit')]"

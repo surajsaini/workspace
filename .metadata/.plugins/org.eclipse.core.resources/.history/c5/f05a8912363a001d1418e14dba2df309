@@ -1,0 +1,40 @@
+package nopwebsitetesting;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class noploginpage {
+
+	WebDriver driver;
+	static readxpathfile xpathprop;
+
+	public noploginpage(WebDriver rdriver) throws IOException {
+
+		// this.driver = driver;
+		driver = rdriver;
+
+		xpathprop = new readxpathfile();
+
+	}
+
+	public void adminfield(String email) {
+		driver.findElement(By.xpath("//input[contains(@class,'email')]")).clear();
+		driver.findElement(By.xpath("//input[contains(@class,'email')]")).sendKeys(email);
+		
+		driver.findElement(By.xpath(xpathprop.usernamexpath())).clear();
+		driver.findElement(By.xpath(xpathprop.usernamexpath())).sendKeys(password);
+	}
+
+	public void passwordfield(String password) {
+		
+		driver.findElement(By.xpath(xpathprop.passwordpath())).clear();
+		driver.findElement(By.xpath(xpathprop.passwordxpath())).sendKeys(password);
+	}
+
+	public void clickonlogin() throws IOException {
+		driver.findElement(By.xpath(xpathprop.loginbuttonxpath())).click();
+
+	}
+}

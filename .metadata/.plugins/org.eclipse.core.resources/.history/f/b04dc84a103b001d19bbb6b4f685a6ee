@@ -1,0 +1,25 @@
+package nopwebsitetesting;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+public class NOPCustomerSearchTest extends baseclass {
+
+	baseclass obj = new baseclass();
+	NOPCustomerSearchPage nopcust;
+
+	public NOPCustomerSearchTest() throws IOException {
+
+		nopcust = new NOPCustomerSearchPage(driver);
+	}
+
+	@Test
+	public void searchcustomerbyemail() {
+
+		driver.get("https://admin-demo.nopcommerce.com/Admin/Customer/List");
+		nopcust.clickoncustomersearchbutton();
+		nopcust.entercustomersearchemail(conf.inputemailoncustomersearch());
+	}
+
+}

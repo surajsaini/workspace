@@ -1,0 +1,25 @@
+# list of login page xpath
+username=//input[contains(@class,'email')]
+password=//input[contains(@class,'password')]
+loginbutton=//button[contains(@type,'submit')]
+
+# list of home page xpath
+logoutbutton=//a[contains(text(),'Logout')]
+
+# list of xpath customer search
+customermainmenu=//ul[contains(@class,'pills')]/li[4]
+customersubmenu=//ul//a[contains(@href,'/Admin/Customer/List')]
+searchemail=//td[contains(text(),'suraj@sopra')]
+email=//input[contains(@id,'SearchEmail')]
+firstname=
+lastname=
+dobmonth=
+dobday=
+compnay=
+ipaddress=
+customerroles=
+searchbutton=//button[contains(@id,'search')]
+tablecolumntwo=//table[contains(@id,'customers-grid')]//tr[contains(@class,'odd')]/td[2]
+
+
+# list of xpath customer create
