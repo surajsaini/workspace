@@ -39,7 +39,7 @@ public class NOPCustomerSearchPage {
 			
 			return driver.findElement(By.xpath(xpathpropmethod.tablecolumntwo())).getText();
 			
-			
+			return myLocator;
 		}
 	
 }
