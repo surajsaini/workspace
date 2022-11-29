@@ -39,6 +39,7 @@ public class readxpathfile {
 	}
 
 	// methods to call webelement xpath on customer searchpage
+	
 	public String inputemailcustomersearch() {
 		return xpathprop.getProperty("email");
 	}
@@ -59,7 +60,64 @@ public class readxpathfile {
 	public String tablecolumntwo() {
 		return xpathprop.getProperty("tablecolumntwo");
 	}
-	
+
 	@FindBy(id = "idOfYourElement")
 	WebElement myLocator;
+
+	public String newbutton() {
+		return xpathprop.getProperty(("addnewbutton"));
+	}
+	
+	// methods to call webelement xpath on add a new customer page
+	
+	public String ancaddbutton() {
+		return xpathprop.getProperty("ANCaddnewbutton");
+		
+	}
+	
+	public String ancemail() {
+		return xpathprop.getProperty("ANCemail");
+	}
+	
+	public String ancpassword() {
+		return xpathprop.getProperty("ANCpassword");
+	}
+	
+	public String ancfirstname() {
+		
+		return xpathprop.getProperty("ANCfirstname");
+	}
+	
+	public String ancgendermale() {
+		return xpathprop.getProperty("ANCgendermale");
+	}
+	
+	public String ancgenderfemale() {
+		return xpathprop.getProperty("ANCgenderfemale");
+	}
+	
+	public String ancdob() {
+		return xpathprop.getProperty("ANCdob");
+	}
+	
+	public String ancnewsletter() {
+		return xpathprop.getProperty("ANCnewsletter");
+	}
+	
+	public String anccutomerrole() {
+		return xpathprop.getProperty("ANCcustomerrole");
+	}
+	
+	public String ancmanagerofvendor() {
+		return xpathprop.getProperty("ANCmanagerofvendor");
+	}
+	
+	public String ancsavebutton() {
+		return xpathprop.getProperty("ANCsavebutton");
+	}
+	
+	public String ancalerttext() {
+		return xpathprop.getProperty("ANCalerttext");
+	}
+	
 }

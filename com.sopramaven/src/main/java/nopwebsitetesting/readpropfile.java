@@ -42,8 +42,27 @@ public class readpropfile {
 		return prop.getProperty("customersearchemailid");
 	} 
 	
-	public String firstnameintable() {
-		
+	public String firstnameintable() {		
 		return prop.getProperty("firstname");
 	}
+	
+	// method to input data on create a new customer page
+	public String getancemail() {		
+		return prop.getProperty("ancemail");
+	}
+	
+	public String getancpassword() {		
+		return prop.getProperty("ancpassword");
+	}
+	
+	public String getancfirstname() {		
+		return prop.getProperty("ancfirstname");
+	}
+	
+	public String getancdob() {		
+		return prop.getProperty("ancdob");
+	}
+	
+		
+	
 }

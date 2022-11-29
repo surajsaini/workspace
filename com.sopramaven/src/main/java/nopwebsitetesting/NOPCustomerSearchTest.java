@@ -18,9 +18,14 @@ public class NOPCustomerSearchTest extends baseclass {
 	@Test
 	public void searchcustomerbyemail() throws InterruptedException, IOException {
 		nopcust = new NOPCustomerSearchPage(driver);
-		driver.get("https://admin-demo.nopcommerce.com/Admin/Customer/List");
-		noplogin.clickonlogin();
-		nopcust.clickoncustomer();	
+		
+
+		nopcust.adminfield(conf.getUserName());		
+		nopcust.passwordfield(conf.getPass());
+		nopcust.clickonlogin();
+		log.info("login done, reach home page");
+		Thread.sleep(5000);
+		nopcust.clickoncustomer();
 		Thread.sleep(2000);
 		nopcust.clickoncustomersubmenu();
 		nopcust.entercustomersearchemail(conf.inputemailoncustomersearch());

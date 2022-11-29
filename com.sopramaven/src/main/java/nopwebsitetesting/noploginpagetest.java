@@ -9,33 +9,31 @@ public class noploginpagetest extends baseclass {
 
 	baseclass obj = new baseclass();
 
-	@Test
-	public void logintest() throws InterruptedException, IOException {
+	@Test(priority = 1)
 
+	void logintest() throws InterruptedException, IOException {
+		log.info("loginstart");
 		noplogin.adminfield(conf.getUserName());
-		log.info("email enter succesfully");
 		noplogin.passwordfield(conf.getPass());
-		log.info("password enter sucessfully");
 		obj.takescreenshot(driver, "loginpage");
-		log.info("screenshot taken");
 		noplogin.clickonlogin();
-		log.info("login sucessfully");
 		obj.takescreenshot(driver, "homepage");
+		log.info("logincomplete");
 		Assert.assertEquals(conf.gethomepagetitle(), driver.getTitle());
-		System.out.println(readxpathfile.xpathprop.getProperty("username"));
-		System.out.println(readpropfile.prop.getProperty(""));
+		log.info("loginpass");
 
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void logouttest() throws IOException {
-
-		obj.takescreenshot(driver,"logouttest-homepage");
+		log.info("logoutstart");
+		obj.takescreenshot(driver, "logouttest-homepage");
 		noplogin.clickonlogoutbutton();
-		log.info("user click on logou buttin");
-		obj.takescreenshot(driver,"logouttest-loginpage");
+		obj.takescreenshot(driver, "logouttest-loginpage");
+		log.info("logoutcomplete");
 		Assert.assertEquals(conf.getloginpagetitle(), driver.getTitle());
-		
+		log.info("logoutpass");
+
 	}
 
 }

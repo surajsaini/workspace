@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nopwebsitetesting.NOPCustomerSearchTest">
+      <class name="nopwebsitetesting.NOPAddNewCustomerTest">
         <methods>
           <include name="closeApplication"/>
+          <include name="nopaddnewcuromer"/>
           <include name="setupApplication"/>
-          <include name="searchcustomerbyemail"/>
         </methods>
-      </class> <!-- nopwebsitetesting.NOPCustomerSearchTest -->
+      </class> <!-- nopwebsitetesting.NOPAddNewCustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

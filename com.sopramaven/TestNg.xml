@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="com.sopramaven">
+
+	<test name="nopwebsitetesting">
+		<classes>
+			<class name="nopwebsitetesting.noploginpagetest"/>
+			<class name="nopwebsitetesting.NOPAddNewCustomerTest"/>
+			<class name="nopwebsitetesting.NOPCustomerSearchTest"/>
+		</classes>
+	</test>
+
+</suite>
+
+

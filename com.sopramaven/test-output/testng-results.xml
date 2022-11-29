@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
@@ -7,24 +7,80 @@
     <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End=====]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-09-26T18:17:21 IST" name="Default suite" finished-at="2022-09-26T18:18:12 IST" duration-ms="51695">
+  <suite started-at="2022-11-29T14:10:18 IST" name="com.sopramaven" finished-at="2022-11-29T14:11:00 IST" duration-ms="42031">
     <groups>
     </groups>
-    <test started-at="2022-09-26T18:17:21 IST" name="Default test" finished-at="2022-09-26T18:18:12 IST" duration-ms="51695">
-      <class name="nopwebsitetesting.NOPCustomerSearchTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@609e8838]" started-at="2022-09-26T18:17:21 IST" name="setupApplication" finished-at="2022-09-26T18:17:23 IST" duration-ms="2058" status="PASS">
+    <test started-at="2022-11-29T14:10:18 IST" name="nopwebsitetesting" finished-at="2022-11-29T14:11:00 IST" duration-ms="42031">
+      <class name="nopwebsitetesting.noploginpagetest">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.noploginpagetest@23e84203]" started-at="2022-11-29T14:10:18 IST" name="setupApplication" finished-at="2022-11-29T14:10:21 IST" duration-ms="2978" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="searchcustomerbyemail()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@609e8838]" started-at="2022-09-26T18:17:23 IST" name="searchcustomerbyemail" finished-at="2022-09-26T18:18:12 IST" duration-ms="49605" status="PASS">
+        <test-method signature="logintest()[pri:1, instance:nopwebsitetesting.noploginpagetest@23e84203]" started-at="2022-11-29T14:10:21 IST" name="logintest" finished-at="2022-11-29T14:10:26 IST" duration-ms="4424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method signature="logouttest()[pri:2, instance:nopwebsitetesting.noploginpagetest@23e84203]" started-at="2022-11-29T14:10:26 IST" name="logouttest" finished-at="2022-11-29T14:10:28 IST" duration-ms="1714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logouttest -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.noploginpagetest@23e84203]" started-at="2022-11-29T14:10:28 IST" name="closeApplication" finished-at="2022-11-29T14:10:28 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- nopwebsitetesting.noploginpagetest -->
+      <class name="nopwebsitetesting.NOPAddNewCustomerTest">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@61c4eee0]" started-at="2022-11-29T14:10:28 IST" name="setupApplication" finished-at="2022-11-29T14:10:29 IST" duration-ms="1625" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupApplication -->
+        <test-method signature="nopaddnewcuromer()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@61c4eee0]" started-at="2022-11-29T14:10:29 IST" name="nopaddnewcuromer" finished-at="2022-11-29T14:10:41 IST" duration-ms="12068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nopaddnewcuromer -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@61c4eee0]" started-at="2022-11-29T14:10:41 IST" name="closeApplication" finished-at="2022-11-29T14:10:42 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- nopwebsitetesting.NOPAddNewCustomerTest -->
+      <class name="nopwebsitetesting.NOPCustomerSearchTest">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@6f10d5b6]" started-at="2022-11-29T14:10:42 IST" name="setupApplication" finished-at="2022-11-29T14:10:43 IST" duration-ms="1700" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupApplication -->
+        <test-method signature="searchcustomerbyemail()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@6f10d5b6]" started-at="2022-11-29T14:10:43 IST" name="searchcustomerbyemail" finished-at="2022-11-29T14:11:00 IST" duration-ms="17132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchcustomerbyemail -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@609e8838]" started-at="2022-09-26T18:18:12 IST" name="closeApplication" finished-at="2022-09-26T18:18:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@6f10d5b6]" started-at="2022-11-29T14:11:00 IST" name="closeApplication" finished-at="2022-11-29T14:11:00 IST" duration-ms="137" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
@@ -32,6 +88,6 @@
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- nopwebsitetesting.NOPCustomerSearchTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- nopwebsitetesting -->
+  </suite> <!-- com.sopramaven -->
 </testng-results>

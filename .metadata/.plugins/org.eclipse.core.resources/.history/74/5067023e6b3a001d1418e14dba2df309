@@ -1,7 +1,0 @@
-# list of login page xpath
-username=//input[contains(@class,'email')]
-password=//input[contains(@class,'password')]
-loginbutton=//button[contains(@type,'submit')]
-
-# list of home page xpath
-logoutbutton=//a[contains(text(),'Logout')]
