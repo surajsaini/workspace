@@ -7,6 +7,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="package nopwebsitetesting;"/>
 			<item value="&#x09;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"/>
 		</list>
 		<list key="replacehistory">

@@ -1,0 +1,16 @@
+mainurl=https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+#mainurl=https://admin-demo.nopcommerce.com/Admin/Customer/Create
+Name=surajsaini
+email=admin@yourstore.com
+password=admin
+loginpagetitle=Your store. Login
+homepagetitle=Dashboard / nopCommerce administration
+
+customersearchemailid=surajsaini1@gmail.com
+firstname=James Pan
+
+# add a new customer page input values
+ancemail=surajsaini4@gmail.com
+ancpassword=123456
+ancfirstname=suraj
+ancdob=12/08/1991

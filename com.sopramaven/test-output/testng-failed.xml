@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [com.sopramaven]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="nopwebsitetesting(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nopwebsitetesting.NOPCustomerSearchTest">
+      <class name="nopwebsitetesting.extra">
         <methods>
-          <include name="closeApplication"/>
-          <include name="setupApplication"/>
-          <include name="searchcustomerbyemail"/>
+          <include name="extra1"/>
         </methods>
-      </class> <!-- nopwebsitetesting.NOPCustomerSearchTest -->
-      <class name="nopwebsitetesting.NOPAddNewCustomerTest">
-        <methods>
-          <include name="closeApplication"/>
-          <include name="nopaddnewcuromer"/>
-          <include name="setupApplication"/>
-        </methods>
-      </class> <!-- nopwebsitetesting.NOPAddNewCustomerTest -->
+      </class> <!-- nopwebsitetesting.extra -->
     </classes>
-  </test> <!-- nopwebsitetesting(failed) -->
-</suite> <!-- Failed suite [com.sopramaven] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
