@@ -1,0 +1,109 @@
+multiple array
+
+package javapractice;
+
+public class javaprograms {
+	
+	public static void main(String[] args) {
+	    
+		
+		
+		int[] suraj = {1,2,3,4,5,6,7,8,9};
+		
+		for (int i=0; i<suraj.length; i++) {
+		System.out.print(suraj[i]);
+		System.out.print(" ");
+		}
+	  
+	
+	int[][] saini = {{9,8,7,6,5},{4,3,2,1}};
+	System.out.print("    ");
+System.out.println(saini[1][2] + suraj[4]);
+
+}
+
+}
+
+-------------
+
+
+string reverse
+
+package javapractice;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class javaprograms {
+
+	public static void main(String[] args) {
+
+		String abc = "suraj saini";
+		String cba = "";
+		
+		int abclength = abc.length();
+		
+		for (int i = abclength-1; i>=0; i--) {
+			
+			cba += abc.charAt(i);
+			
+		}
+		System.out.println(cba);
+	}
+}
+
+
+--------------
+
+
+package javapractice;
+
+import java.util.*;
+import java.util.Scanner;
+
+public class javaprograms {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		Scanner scanner2 = new Scanner(System.in);
+
+		System.out.println("Enter main text: ");
+
+		List<String> lines = new ArrayList<>();
+		while (scanner.hasNextLine()) {
+			String line = scanner.nextLine();
+			if (line.isEmpty()) {
+				break;
+			}
+			lines.add(line);
+		}
+
+		System.out.println(lines);
+
+		System.out.println("Enter replace text: ");
+
+		List<String> lines2 = new ArrayList<>();
+		while (scanner2.hasNextLine()) {
+			String line2 = scanner2.nextLine();
+			if (line2.isEmpty()) {
+				break;
+			}
+			lines2.add(line2);
+		}
+
+		System.out.println(lines2);
+
+		scanner.close();
+		scanner2.close();
+		for (int i = 1; i < 100; i++) {
+			if ((i * 6) -1 < lines.size()) {
+				lines.set((i * 6), lines2.get(i));
+
+				
+			}
+			
+		}
+		System.out.println("First list after replacement: " + lines);
+	}
+}
