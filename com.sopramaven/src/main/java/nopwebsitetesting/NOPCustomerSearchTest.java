@@ -32,53 +32,15 @@ public class NOPCustomerSearchTest extends baseclass {
 		Thread.sleep(5000);
 		// nopcust.entercustomersearchemail(conf.inputemailoncustomersearch());
 		log.info("going to clear roles field");
-		driver.findElement(By.xpath("//span[contains(@title,'delete')]")).click();
+	//	driver.findElement(By.xpath("//input[@role='searchbox']")).
+		nopcust.entercustomersearchemail(conf.getancemail());
+		// driver.findElement(By.xpath("//span[contains(@title,'delete')]")).click();
 		log.info("cleared customer role");
 		Thread.sleep(5000);
 		nopcust.clickoncustomersearchbutton();
 		Thread.sleep(5000);
-		// Assert.assertSame(nopcust.tablecolumntwotext(), conf.firstnameintable());
-
-//	//	String column2[] = new String[15]; 
-//		
-//		ArrayList<String> column3 = new ArrayList<>(); 
-//
-//		for (int i = 1; i < 5; i++) {
-//
-//			String W = driver.findElement(By.xpath("//table[contains(@id,'customers-grid')]//tr[" + i + "]/td[3]"))
-//					.getText();
-//			column3.add(W);		
-//		
-//		}					
-//		System.out.println(column3);
-//		System.out.println(conf.firstnameintable());
-//		Assert.assertTrue(column3.equals(conf.firstnameintable().toString()));
-//		
-//	//	Assert.assertTrue(  column3.contains(conf.firstnameintable()));
-//	}
-//
-//}
-
-		for (int j = 1; j < 12; j++) {
-			for (int i = 1; i < 15; i++) {
-
-				String W = driver.findElement(By.xpath("//table[contains(@id,'customers-grid')]//tr[" + i + "]/td[3]"))
-						.getText();
-
-				if (W.equals(conf.firstnameintable())) {
-
-					System.out.println("matching");
-				}
-				System.out.println(i);
-				System.out.println(j);
-			}
-
-			{
-				driver.findElement(By.xpath("//li[contains(@class,'item next')]")).click();
-			}
-
-		}
+		String ab = driver.findElement(By.xpath("//table[@id='customers-grid']//tbody//tr[1]//td[2]")).getText();
+		Assert.assertEquals(conf.getancemail(), ab);
 
 	}
-
 }

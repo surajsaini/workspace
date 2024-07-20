@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,7 +23,7 @@ public class baseclass {
 
 	WebDriver driver;
 	TakesScreenshot screenshot;
-	Logger log = Logger.getLogger(baseclass.class);
+	Logger log = LogManager.getLogger(baseclass.class);
 	readpropfile conf;
 	noploginpage noplogin;
 	readxpathfile xpath;
@@ -57,7 +58,7 @@ public class baseclass {
 				new File("C:\\SURAJ\\Backup_29122021\\Work\\Traning\\seleniumsep\\screenshot\\" + filename + ".jpeg"));
 	}
 
-	public void selectvalue(WebDriver driver,String xpath1,String b) {
+	public void selectvalue(WebDriver driver, String xpath1, String b) {
 		Select value = new Select(driver.findElement(By.id("xpath1")));
 		value.selectByValue(b);
 	}

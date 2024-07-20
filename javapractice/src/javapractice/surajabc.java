@@ -1,7 +1,9 @@
 package javapractice;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class surajabc {
@@ -34,7 +36,7 @@ public class surajabc {
 
 		int n = 8 % 2;
 		int m = 8 / 2;
-		int z=0;
+		int z = 0;
 
 		for (int i = 2; i < o; i++) {
 
@@ -418,24 +420,133 @@ public class surajabc {
 		}
 	}
 
+	public static void test1() {
+
+		String ab = "geeksforgeeks";
+		String bc = "";
+		int count = 0;
+		for (int i = 0; i < ab.length(); i++) {
+
+			if (ab.charAt(i) == ab.charAt(ab.length() - 1 - i)) {
+
+				bc = bc + ab.charAt(i);
+			} else {
+				count++;
+			}
+
+		}
+		System.out.print(bc + "" + count);
+	}
+
+	public static void SubArraywithTargetSum() {
+
+		int[] ab = { 4, 9, 3, 2, 5, 2, 6 };
+		int TS = 12;
+
+		for (int i = 0; i < ab.length; i++) {
+			int sum = ab[i];
+
+			for (int j = i + 1; j < ab.length; j++) {
+				sum = sum + ab[j];
+
+				if (sum == TS) {
+
+					for (int n = i; n <= j; n++) {
+						System.out.print(ab[n]);
+					}
+				}
+
+			}
+			System.out.println(" ");
+		}
+	}
+
+	public static void LargestWordInString() {
+
+		String st1 = "my name is suraj and living in which is very near to delhi";
+		String st = "My name will ram";
+		int ab = 0; // lengthOfLargestWord
+		int bc = 0; // startIndexOfLargestWord
+		int cd = 0; // lengthOfCurrentWord
+		int de = 0; // currentWordIndex
+		int ef = 0; // startIndexOfCurrentWord
+
+		while (de <= st.length()) {
+
+			if (de < st.length() && st.charAt(de) != ' ') {
+				de++;
+			} else {
+				cd = de - ef;
+				if (cd > ab) {
+					ab = cd;
+					bc = ef;
+				}
+				de++;
+				ef = de;
+			}
+		}
+		System.out.print(ab + " " + bc + " " + cd + " " + de + " " + ef);
+		System.out.println(st.substring(bc, bc + ab));
+
+	}
+
+	public static void SmallWordInString() {
+		String sentence = "your name is suraj";
+		int startOfSmallestWord = 0; // Starting index of the smallest word
+		int lengthOfSmallestWord = Integer.MAX_VALUE; // Length of the smallest word (initialized to max value)
+		int startIndex = 0; // Starting index of the current word
+		int currentIndex = 0; // Iterator
+
+		while (currentIndex <= sentence.length()) {
+			if (currentIndex < sentence.length() && sentence.charAt(currentIndex) != ' ') {
+				currentIndex++;
+			} else {
+				int wordLength = currentIndex - startIndex;
+				if (wordLength < lengthOfSmallestWord && wordLength > 0) {
+					lengthOfSmallestWord = wordLength;
+					startOfSmallestWord = startIndex;
+				}
+				currentIndex++;
+				startIndex = currentIndex;
+			}
+		}
+
+		System.out.println("Smallest word: "
+				+ sentence.substring(startOfSmallestWord, startOfSmallestWord + lengthOfSmallestWord));
+	}
+
 	public static void test() {
-		
-		int[] ab = {7,8,3,9};
-		int bc;
-		for(int j=0;j<ab.length;j++) {
-		for(int i=j+1;i<ab.length;i++) {
-			
-			if(ab[j]>ab[i]) {
-				bc=ab[i];
-				ab[i]=ab[j];
-				ab[j]=bc;
-				
-			}}}
-			
-			for (int j = 0; j < ab.length; j++) {
-				System.out.print(ab[j]);
-		}}
-	
+
+		String sentence = "your name is suraj";
+
+		String s1 = sentence + " ";
+
+		System.out.println(s1);
+		int ab = 0;
+		int bc = 0;
+		int ef = 0;
+		int de = 0;
+		HashMap<Integer, Integer> cd = new HashMap<>();
+
+		for (int i = 0; i < s1.length(); i++) {
+
+			if (s1.charAt(i) == ' ') {
+				ab = i; // space index
+				ef = i - de;
+				de = i;
+
+				cd.put(ab, ef);
+
+			}
+
+		}
+		List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(cd.entrySet());
+		entries.sort(Map.Entry.comparingByValue());
+		System.out.println(cd.keySet());
+		System.out.println(cd.values());
+		System.out.println(entries.size());
+		System.out.println(s1.substring(entries.size(), de));
+	}
 
 	public static void main(String[] args) {
 

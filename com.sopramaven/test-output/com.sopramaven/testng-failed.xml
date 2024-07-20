@@ -3,21 +3,6 @@
 <suite name="Failed suite [com.sopramaven]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="nopwebsitetesting(failed)">
     <classes>
-      <class name="nopwebsitetesting.NOPAddNewCustomerTest">
-        <methods>
-          <include name="closeApplication"/>
-          <include name="nopaddnewcuromer"/>
-          <include name="setupApplication"/>
-        </methods>
-      </class> <!-- nopwebsitetesting.NOPAddNewCustomerTest -->
-      <class name="nopwebsitetesting.noploginpagetest">
-        <methods>
-          <include name="closeApplication"/>
-          <include name="setupApplication"/>
-          <include name="logouttest"/>
-          <include name="logintest"/>
-        </methods>
-      </class> <!-- nopwebsitetesting.noploginpagetest -->
       <class name="nopwebsitetesting.NOPCustomerSearchTest">
         <methods>
           <include name="closeApplication"/>
