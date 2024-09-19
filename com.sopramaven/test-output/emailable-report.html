@@ -9,11 +9,35 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">com.sopramaven</th></tr>
-<tr><td><a href="#t0">nopwebsitetesting</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">46,076</td><td></td><td></td></tr>
+<tr><td><a href="#t0">nopwebsitetesting</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,741</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.sopramaven</th></tr></tbody><tbody id="t0"><tr><th colspan="4">nopwebsitetesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">nopwebsitetesting.NOPAddNewCustomerTest</td><td><a href="#m0">nopaddnewcuromer</a></td><td rowspan="1">1721502601474</td><td rowspan="1">7461</td></tr><tr class="passedodd"><td rowspan="1">nopwebsitetesting.NOPCustomerSearchTest</td><td><a href="#m1">searchcustomerbyemail</a></td><td rowspan="1">1721502611422</td><td rowspan="1">25134</td></tr><tr class="passedeven"><td rowspan="2">nopwebsitetesting.noploginpagetest</td><td><a href="#m2">logintest</a></td><td rowspan="1">1721502593532</td><td rowspan="1">3776</td></tr><tr class="passedeven"><td><a href="#m3">logouttest</a></td><td rowspan="1">1721502597312</td><td rowspan="1">1689</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.sopramaven</th></tr></tbody><tbody id="t0"><tr><th colspan="4">nopwebsitetesting &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">nopwebsitetesting.NOPAddNewCustomerTest</td><td><a href="#m0">nopaddnewcuromer</a></td><td rowspan="1">1722505000401</td><td rowspan="1">27855</td></tr><tr><th colspan="4">nopwebsitetesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">nopwebsitetesting.NOPCustomerSearchTest</td><td><a href="#m1">searchcustomerbyemail</a></td><td rowspan="1">1722505000347</td><td rowspan="1">24256</td></tr><tr class="passedodd"><td rowspan="2">nopwebsitetesting.noploginpagetest</td><td><a href="#m2">logintest</a></td><td rowspan="1">1722505001013</td><td rowspan="1">3447</td></tr><tr class="passedodd"><td><a href="#m3">logouttest</a></td><td rowspan="1">1722505004463</td><td rowspan="1">1945</td></tr></tbody>
 </table>
-<h2>nopwebsitetesting</h2><h3 id="m0">nopwebsitetesting.NOPAddNewCustomerTest#nopaddnewcuromer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>nopwebsitetesting</h2><h3 id="m0">nopwebsitetesting.NOPAddNewCustomerTest#nopaddnewcuromer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;×&apos;)]&quot;}
+  (Session info: chrome=127.0.6533.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ITEM-S135709&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52054}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f41e1ab263f3f59a7cd6cdc1ffcf42d7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;×&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at nopwebsitetesting.NOPAddNewCustomerPage.getalerttext(NOPAddNewCustomerPage.java:70)
+	at nopwebsitetesting.NOPAddNewCustomerTest.nopaddnewcuromer(NOPAddNewCustomerTest.java:39)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">nopwebsitetesting.NOPCustomerSearchTest#searchcustomerbyemail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">nopwebsitetesting.noploginpagetest#logintest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">nopwebsitetesting.noploginpagetest#logouttest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

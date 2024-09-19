@@ -13,7 +13,6 @@ public class NOPAddNewCustomerPage {
 	public NOPAddNewCustomerPage(WebDriver rdriver) throws IOException {
 		// this.driver = driver;
 		driver = rdriver;
-
 		xpathpropmethod = new readxpathfile();
 	}
 	

@@ -6,7 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="System"/>
 		<list key="findhistory">
+			<item value="system"/>
+			<item value="package javapractice;"/>
+			<item value="delete"/>
+			<item value="//span[contains(@title,&apos;delete&apos;)]"/>
 			<item value="package nopwebsitetesting;"/>
 			<item value="&#x09;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"/>
 		</list>

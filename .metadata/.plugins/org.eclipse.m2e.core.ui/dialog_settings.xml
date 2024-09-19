@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SURAJ\Backup_29122021\Work\Traning\seleniumsep2022"/>
+			<item value="C:\SURAJ\Backup_29122021\Work\Traning\seleniumsep\workspace\com.surajnewproject"/>
 			<item value="C:\SURAJ\Backup_29122021\Work\Traning\seleniumsep\workspace\com.sopramaven\src\main\java\nopwebsitetesting\baseclass.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -14,6 +16,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -25,10 +28,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="SurajNewProject.MavenProject"/>
 		</list>
 		<list key="groupId">
+			<item value="SurajNewProject"/>
 		</list>
 		<list key="artifactId">
+			<item value="MavenProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,16 +50,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.surajcum"/>
-			<item value="com.sopra"/>
 		</list>
 		<list key="name">
-			<item value="sopraprject1"/>
-			<item value="surajsaini"/>
 		</list>
 		<list key="artifactId">
-			<item value="com.surajcumproject"/>
-			<item value="com.sopramaven"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[=====Browser Session End=====]]>
+      <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
@@ -14,33 +14,33 @@
       <![CDATA[=====Browser Session End=====]]>
     </line>
     <line>
-      <![CDATA[=====Browser Session Started=====]]>
+      <![CDATA[=====Browser Session End=====]]>
     </line>
     <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-21T00:39:50 IST" name="com.sopramaven" finished-at="2024-07-21T00:40:36 IST" duration-ms="46076">
+  <suite started-at="2024-08-01T15:06:36 IST" name="com.sopramaven" finished-at="2024-08-01T15:07:08 IST" duration-ms="31741">
     <groups>
     </groups>
-    <test started-at="2024-07-21T00:39:50 IST" name="nopwebsitetesting" finished-at="2024-07-21T00:40:36 IST" duration-ms="46076">
+    <test started-at="2024-08-01T15:06:36 IST" name="nopwebsitetesting" finished-at="2024-08-01T15:07:08 IST" duration-ms="31741">
       <class name="nopwebsitetesting.noploginpagetest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.noploginpagetest@48a12036]" started-at="2024-07-21T00:39:50 IST" name="setupApplication" finished-at="2024-07-21T00:39:53 IST" duration-ms="2853" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.noploginpagetest@17f62e33]" started-at="2024-08-01T15:06:36 IST" name="setupApplication" finished-at="2024-08-01T15:06:41 IST" duration-ms="4286" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="logintest()[pri:1, instance:nopwebsitetesting.noploginpagetest@48a12036]" started-at="2024-07-21T00:39:53 IST" name="logintest" finished-at="2024-07-21T00:39:57 IST" duration-ms="3776" status="PASS">
+        <test-method signature="logintest()[pri:1, instance:nopwebsitetesting.noploginpagetest@17f62e33]" started-at="2024-08-01T15:06:41 IST" name="logintest" finished-at="2024-08-01T15:06:44 IST" duration-ms="3447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method signature="logouttest()[pri:2, instance:nopwebsitetesting.noploginpagetest@48a12036]" started-at="2024-07-21T00:39:57 IST" name="logouttest" finished-at="2024-07-21T00:39:59 IST" duration-ms="1689" status="PASS">
+        <test-method signature="logouttest()[pri:2, instance:nopwebsitetesting.noploginpagetest@17f62e33]" started-at="2024-08-01T15:06:44 IST" name="logouttest" finished-at="2024-08-01T15:06:46 IST" duration-ms="1945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logouttest -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.noploginpagetest@48a12036]" started-at="2024-07-21T00:39:59 IST" name="closeApplication" finished-at="2024-07-21T00:39:59 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.noploginpagetest@17f62e33]" started-at="2024-08-01T15:06:46 IST" name="closeApplication" finished-at="2024-08-01T15:06:46 IST" duration-ms="214" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
@@ -49,18 +49,75 @@
         </test-method> <!-- closeApplication -->
       </class> <!-- nopwebsitetesting.noploginpagetest -->
       <class name="nopwebsitetesting.NOPAddNewCustomerTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@696f0212]" started-at="2024-07-21T00:39:59 IST" name="setupApplication" finished-at="2024-07-21T00:40:01 IST" duration-ms="2306" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@4b741d6d]" started-at="2024-08-01T15:06:36 IST" name="setupApplication" finished-at="2024-08-01T15:06:40 IST" duration-ms="3673" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="nopaddnewcuromer()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@696f0212]" started-at="2024-07-21T00:40:01 IST" name="nopaddnewcuromer" finished-at="2024-07-21T00:40:08 IST" duration-ms="7461" status="PASS">
+        <test-method signature="nopaddnewcuromer()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@4b741d6d]" started-at="2024-08-01T15:06:40 IST" name="nopaddnewcuromer" finished-at="2024-08-01T15:07:08 IST" duration-ms="27855" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'×')]"}
+  (Session info: chrome=127.0.6533.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ITEM-S135709', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52054}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f41e1ab263f3f59a7cd6cdc1ffcf42d7
+*** Element info: {Using=xpath, value=//button[contains(text(),'×')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'×')]"}
+  (Session info: chrome=127.0.6533.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ITEM-S135709', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52054}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f41e1ab263f3f59a7cd6cdc1ffcf42d7
+*** Element info: {Using=xpath, value=//button[contains(text(),'×')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at nopwebsitetesting.NOPAddNewCustomerPage.getalerttext(NOPAddNewCustomerPage.java:70)
+at nopwebsitetesting.NOPAddNewCustomerTest.nopaddnewcuromer(NOPAddNewCustomerTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nopaddnewcuromer -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@696f0212]" started-at="2024-07-21T00:40:08 IST" name="closeApplication" finished-at="2024-07-21T00:40:09 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPAddNewCustomerTest@4b741d6d]" started-at="2024-08-01T15:07:08 IST" name="closeApplication" finished-at="2024-08-01T15:07:08 IST" duration-ms="189" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
@@ -69,18 +126,18 @@
         </test-method> <!-- closeApplication -->
       </class> <!-- nopwebsitetesting.NOPAddNewCustomerTest -->
       <class name="nopwebsitetesting.NOPCustomerSearchTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@5733f295]" started-at="2024-07-21T00:40:09 IST" name="setupApplication" finished-at="2024-07-21T00:40:11 IST" duration-ms="2341" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@74ea2410]" started-at="2024-08-01T15:06:36 IST" name="setupApplication" finished-at="2024-08-01T15:06:40 IST" duration-ms="3608" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="searchcustomerbyemail()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@5733f295]" started-at="2024-07-21T00:40:11 IST" name="searchcustomerbyemail" finished-at="2024-07-21T00:40:36 IST" duration-ms="25134" status="PASS">
+        <test-method signature="searchcustomerbyemail()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@74ea2410]" started-at="2024-08-01T15:06:40 IST" name="searchcustomerbyemail" finished-at="2024-08-01T15:07:04 IST" duration-ms="24256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchcustomerbyemail -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@5733f295]" started-at="2024-07-21T00:40:36 IST" name="closeApplication" finished-at="2024-07-21T00:40:36 IST" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:nopwebsitetesting.NOPCustomerSearchTest@74ea2410]" started-at="2024-08-01T15:07:04 IST" name="closeApplication" finished-at="2024-08-01T15:07:04 IST" duration-ms="177" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>

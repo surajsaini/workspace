@@ -12,7 +12,7 @@ public class noploginpage {
 
 	public noploginpage(WebDriver rdriver) throws IOException {
 
-		// this.driver = driver;
+	//	this.driver = driver;
 		driver = rdriver;
 
 		xpathpropmethod = new readxpathfile();

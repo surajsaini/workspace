@@ -3,58 +3,31 @@ package javapractice;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
 
 public class surajabc {
 
-	public static void suraj(int a) {
-
-		if (a > 10)
-			System.out.print(true);
-		else
-			System.out.print(false);
-	}
-
-	public static void suraj1() {
-
-		int n1 = 0, n2 = 1, n3;
-
-		System.out.println(n1 + " " + n2);
-
-		for (int i = 1; i < 10; i++) {
-
-			n3 = n1 + n2;
-			System.out.print(n3 + " ");
-
-			n1 = n2;
-			n2 = n3;
-		}
-	}
-
-	public static void primenumber(int o) {
-
-		int n = 8 % 2;
-		int m = 8 / 2;
-		int z = 0;
-
-		for (int i = 2; i < o; i++) {
-
-			if (o % i == 0) {
-				z = 6;
+	public static void primenumber(int ab) {
+		Boolean Flag = true;
+		for (int i = 3; i <= Math.sqrt(ab); i++) {
+			if (ab % i == 0 || ab == 2) {
+				Flag = false;
+				break;
 			}
 		}
-
-		if (z == 6) {
-			System.out.print("it is not");
-		} else
-
-		{
-			System.out.print("it is ");
+		if (Flag) {
+			System.out.println(ab + "- prime");
+		} else {
+			System.out.println(ab + "- not prime");
 		}
+
 	}
 
-	public static void starsquare(int n, int m) {
+	public static void hollowStarSquare(int n, int m) {
 
 		int i;
 		int j;
@@ -76,29 +49,24 @@ public class surajabc {
 		}
 	}
 
-	public static void startriangle() {
+	public static void starTriangle() {
 
 		for (int i = 0; i < 6; i++) {
 
-			for (int j = 0; j < 10; j++) {
-
-				if (j == 5) {
-
-					System.out.println("*");
-				}
-
-				else {
-
-					System.out.print(" ");
-				}
-
-				System.out.println();
-
+			for (int j = 0; j < 6 - i - 1; j++) {
+				System.out.print(" ");
 			}
+
+			for (int k = 0; k < i + 1; k++) {
+
+				System.out.print(" *");
+			}
+			System.out.println();
 		}
+
 	}
 
-	public static void reverseastring(String n) {
+	public static void reverseString(String n) {
 
 		String b = "";
 
@@ -124,26 +92,22 @@ public class surajabc {
 
 	public static void ArrayConsecutive() {
 
-		int[] ab = { 1, 2, 5, 4, 5, 6, 7, 65, 4, 3 };
-
-		int count = 0;
-		int max = 0;
+		int[] ab = { 1, 2, 4, 5, 6, 7 };
+		int count = 1;
+		int bc = 1;
 
 		for (int i = 0; i < ab.length - 1; i++) {
-
-			if (ab[i] + 1 == ab[i + 1]) {
-
+			if (ab[i + 1] == ab[i] + 1) {
 				count++;
+			} else if (count > bc) {
+				bc = count;
+				count = 1;
 			}
-
-			else {
-				count = 0;
-			}
-
-			max = Math.max(max, count + 1);
 		}
-
-		System.out.println(max);
+		if (count > bc) {
+			bc = count;
+		}
+		System.out.println(bc);
 	}
 
 	public static void CountCapitalAlphabet() {
@@ -207,17 +171,14 @@ public class surajabc {
 	public static void LargestElementinArray() {
 
 		int[] ab = { 3, 5, 12, 22, 0, 3, 29 };
-		int bc = 0;
 
+		int aa = Integer.MIN_VALUE;
 		for (int i = 0; i < ab.length; i++) {
-
-			if (bc < ab[i]) {
-
-				bc = ab[i];
-
+			if (aa < ab[i]) {
+				aa = ab[i];
 			}
 		}
-		System.out.print(bc);
+		System.out.println(aa);
 	}
 
 	public static void Palindroma() {
@@ -261,6 +222,20 @@ public class surajabc {
 
 	}
 
+	public static void removeDuplicateCharFromString() {
+
+		String ab = "programming";
+		StringBuilder bc = new StringBuilder();
+		Set<Character> cd = new HashSet<>();
+		for (int i = 0; i < ab.length(); i++) {
+			if (!cd.contains(ab.charAt(i))) {
+				cd.add(ab.charAt(i));
+				bc.append(ab.charAt(i));
+			}
+		}
+		System.out.print(bc);
+	}
+
 	public static void ReordedArray() {
 
 		int[] ab = { 8, 4, -5, -1, 9, 2, -1, 8, -3 };
@@ -288,20 +263,25 @@ public class surajabc {
 
 	public static void TargetSum() {
 
-		int[] ab = { 3, 5, 7, 4, 6 };
-		int TS = 9;
+		int[] ab = { 2, 6, 1, 4, 8, 3, 3, 2, 3, 9 };
+		int bc = 0;
 
-		for (int j = 0; j < ab.length; j++) {
-			for (int i = j + 1; i < ab.length; i++) {
+		for (int i = 0; i < ab.length; i++) {
+			bc = ab[i];
+			for (int j = i + 1; j < ab.length; j++) {
 
-				if (ab[j] + ab[i] == TS) {
+				bc = bc + ab[j];
+				if (bc == 11) {
 
-					System.out.println(j + "and" + i);
+					for (int k = i; k <= j; k++) {
+						System.out.print(ab[k]);
+					}
+					System.out.println(" ");
 
 				}
-
 			}
 		}
+
 	}
 
 	public static void TargetSum(int TS) {
@@ -461,34 +441,21 @@ public class surajabc {
 		}
 	}
 
-	public static void LargestWordInString() {
 
-		String st1 = "my name is suraj and living in which is very near to delhi";
-		String st = "My name will ram";
-		int ab = 0; // lengthOfLargestWord
-		int bc = 0; // startIndexOfLargestWord
-		int cd = 0; // lengthOfCurrentWord
-		int de = 0; // currentWordIndex
-		int ef = 0; // startIndexOfCurrentWord
-
-		while (de <= st.length()) {
-
-			if (de < st.length() && st.charAt(de) != ' ') {
-				de++;
-			} else {
-				cd = de - ef;
-				if (cd > ab) {
-					ab = cd;
-					bc = ef;
+		public static void largestWordInTheString( String ab) {
+			
+			String[] words = ab.split(" ");
+			String largestWord = "";
+			
+			for(int i=0;i<words.length;i++) {			
+				if(words[i].length() > largestWord.length()) {				
+					largestWord = words[i];
 				}
-				de++;
-				ef = de;
-			}
+			}		
+			System.out.println(largestWord);
 		}
-		System.out.print(ab + " " + bc + " " + cd + " " + de + " " + ef);
-		System.out.println(st.substring(bc, bc + ab));
 
-	}
+	
 
 	public static void SmallWordInString() {
 		String sentence = "your name is suraj";
@@ -515,7 +482,7 @@ public class surajabc {
 				+ sentence.substring(startOfSmallestWord, startOfSmallestWord + lengthOfSmallestWord));
 	}
 
-	public static void test() {
+	public static void SmallWordInString2() {
 
 		String sentence = "your name is suraj";
 
@@ -548,9 +515,116 @@ public class surajabc {
 		System.out.println(s1.substring(entries.size(), de));
 	}
 
-	public static void main(String[] args) {
+	public static void stringOperators() {
 
-		test();
+		String a = "EPAM";
+		String b = new String("EPAM");
+		String d = new String("EPAM");
+		String c = "EPAM";
+		System.out.println(d == b);
+		System.out.println(a.equals(b));
+		System.out.println(a == c);
+		System.out.println(a == b);
+
 	}
 
+	public static void collectionHashMap() {
+
+		Map<String, String> st = new HashMap<>();
+
+		st.put("Suraj", "2000");
+		st.put("Hema", "1998");
+		st.put("suresh", "2007");
+
+		for (Map.Entry<String, String> entry : st.entrySet()) {
+
+			if (Integer.parseInt(entry.getValue()) > 2000) {
+
+				System.out.println(entry.getKey());
+			}
+		}
+
+	}
+
+	public static void findDuplicateArrayUsingHashMap() {
+
+		int[] ab = { 3, 5, 1, 3, 7, 8, 5 };
+		Map<Integer, Integer> bc = new HashMap<>();
+
+		for (int i = 0; i < ab.length; i++) {
+
+			if (bc.containsValue(ab[i])) {
+
+				System.out.println(ab[i] + " duplicate");
+			} else {
+				bc.put(i, ab[i]);
+			}
+		}
+	}
+
+	public static void test() {
+
+		for (int i = 0; i <= 5; i++) {
+
+			for (int j = 0; j <= 5; j++) {
+
+				if (j == 0 || i == 0 || j == 5 || i == 5) {
+					System.out.print("* ");
+				} else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+	public static void CharCountInStringUsingHashSet() {
+		String word = "google";
+		int count = 0;
+		Set<Character> word2 = new HashSet();
+
+		for (int j = 0; j < word.length(); j++) {
+
+			if (word2.contains(word.charAt(j))) {
+				continue;
+			}
+
+			for (int i = 0; i < word.length(); i++) {
+
+				if (word.charAt(j) == (word.charAt(i))) {
+
+					count++;
+				}
+			}
+			word2.add(word.charAt(j));
+
+			System.out.println(word.charAt(j) + "--" + count);
+			count = 0;
+		}
+
+	}
+
+	public static void CharCountInStringUsingHashMap() {
+		String word = "google";
+
+		Map<Character, Integer> word2 = new HashMap<>();
+
+		for (int i = 0; i < word.length(); i++) {
+
+			if (word2.containsKey(word.charAt(i))) {
+
+				int n = word2.get(word.charAt(i));
+				n++;
+				word2.put(word.charAt(i), n);
+			} else {
+				word2.put(word.charAt(i), 1);
+			}
+		}
+		System.out.println(word2);
+	}
+
+	public static void main(String[] args) {
+
+		ReverseArray();
+	}
 }
